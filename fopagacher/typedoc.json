@@ -1,0 +1,11 @@
+{
+    "entryPoints": ["components/body.tsx", "components/footer.tsx", "components/header.tsx"],
+    "out": "docs",
+    "tsconfig": "tsconfig.json",
+    "exclude": ["node_modules"],
+    "excludePrivate": true,
+    "excludeProtected": true,
+    "theme": "default",
+    "name": "Fopagacher",
+    "includeVersion": true
+}
