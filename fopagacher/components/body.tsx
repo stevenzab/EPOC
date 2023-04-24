@@ -12,10 +12,19 @@
  *
  * @returns {TSX.Element} - TSX element representing the body.
  */
- function Body() {
+
+import React from "react";
+import Title from "./title";
+import Logo from "./logo";
+import Resume from "./resume";
+
+function Body() {
   return (
     <div>
       <h1>Body components</h1>
+      <Title />
+      <Logo />
+      <Resume />
     </div>
   );
 }
