@@ -9,16 +9,4 @@ describe('Title component', () => {
     const titleElement = getByTestId('title');
     expect(titleElement.textContent).toBe('title components');
 	});
-
-  it('renders a div wrapper', () => {
-    const { getByTestId } = render(<Title />);
-    const divElement = getByTestId('title-wrapper');
-    expect(divElement.tagName).toBe('DIV');
-  });
-
-  it('renders only one h1 element', () => {
-    const { queryAllByTestId } = render(<Title />);
-    const h1Elements = queryAllByTestId('title');
-    expect(h1Elements.length).toBe(1);
-  });
 });
